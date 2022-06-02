@@ -1,7 +1,8 @@
 .wrapper {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
 }
 
 .box {
