@@ -1,7 +1,7 @@
 .father {
     display: flex;
     /* Main Axis */
-    justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%
 
@@ -12,13 +12,7 @@
     justify-content: center;
     align-items: center;
     flex-basis: 300px;
-    height: 200px;
     background-color: peru;
     color: white;
     font-size: 50px;
-}
-
-.child:nth-child(2) {
-    background: #000;
-    flex-grow: 1
 }
