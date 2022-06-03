@@ -1,20 +1,20 @@
 .father {
     display: grid;
-    grid-template-columns:  repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line];
+    grid-template-rows: repeat(4, 100px [sexy-line]);
     gap: 10px;
 }
 
 .header {
     background-color: #2ecc71;
-    grid-column: span 4;
+    grid-column: 1 / 5;
 
 }
 
 .content {
     background-color: bisque;
-    grid-column: span 3;
-    grid-row: span 2;
+    grid-column: first-line / fourth-line;
+    grid-row: sexy-line 1 / sexy-line 3;
 }
 
 .nav {
